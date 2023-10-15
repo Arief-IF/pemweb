@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arief Laptop Store</title>
+    </head>
+    <body>
+        <table border="10">
+            <tr>
+                <td width="1000px" align="center">Home</td>
+                <td width="1000px" align="center">Generate Link</td>
+                <td width="1000px" align="center">Transaction History</td>
+                <td width="1000px" align="center">Policy</td>
+                <td width="1000px" align="center">Logout</td>
+            </tr>
+        </table>
+            <br>
+        <table>
+            <tr> 
+                <td width = "30%"><img style="border: 5px solid black;" src="foto/asus.png" alt="Image" height="300"><br>
+                <center>
+                <input type="submit" value="Upload Picture">
+                </center></td>
+                <td width = "60%">
+                    <table>
+                        <tr>
+                            <td>Title Here :</td>
+                            <td><input type="text" placeholder="Title Here"></td>
+                        </tr>
+                        <tr>
+                            <td>Description :</td> 
+                            <td>
+                                <textarea
+                                    cols="30"
+                                    rows="5"
+                                    maxlength="500"
+                                    placeholder="Year  : 
+                                                                                            Model : 
+                                                                                            Condition :"
+                                ></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Account Number :</td> 
+                            <td><input type="number" placeholder="123-456-789-0" /></td>
+                        </tr>
+                        <tr>
+                            <td>Bank :</td> 
+                            <td>
+                                <select id="bank">
+                                    <option>HSBC</option>
+                                    <option value="BCA">BCA</option>
+                                    <option value="BRI">BRI</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Account Holder :</td> 
+                            <td><input type="text" placeholder="Name Here" /></td>
+                        </tr>
+                        <tr>
+                            <td>Transaction :</td> 
+                            <td>
+                                <select id="Transaction">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option> 
+                                </select> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>* if the transaction is for 3 person, choose 3 from the drop-down list</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="checkbox">Send to Mobile Phone</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="checkbox">Send to Email</td>
+                        </tr>
+                        <tr>
+                            <td>Send to Mobile Phone :</td>
+                            <td><input type="number" placeholder="1234567890, 1234567891"></td>
+                        </tr>
+                        <tr>
+                            <td>Send to Email :</td>
+                            <td><input type="text" placeholder="mfmm2g13@soton.ac.uk, fys_06@yahoo.com"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <center>
+            <a href="hasil_pemesanan.html">
+                <input type="submit" value="Generate Nabr Link">
+            </a> 
+        </center>
+    </body>
+</html>
