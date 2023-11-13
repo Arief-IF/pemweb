@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS Arief</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        fieldset {
+            width: 33%;
+        }
+
+        input.size {
+            width: 60px;
+        }
+
+        td {
+            padding: 3px;
+            vertical-align: top;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Daftar Alumni</legend>
+            <table>
+                <tr>
+                    <td>Cari Nama Alumni</td>
+                    <td>
+                        <input type="search" placeholder="search">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Program Studi :</td>
+                    <td>
+                        <select id="programstudi" name="programstudi">
+                            <option value="SI">Sistem Informasi</option>
+                            <option value="TI">Teknik Informatika</option>
+                            <option value="BD">Bisnis Digital</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="tahunmasuk">Tahun Masuk :</label></td>
+                    <td><input type="number" class="size" name="tahunmasuk"></td>
+                </tr>
+                <tr>
+                    <td><label for="tahunlulus">Tahun Lulus :</label></td>
+                    <td><input type="number" class="size" name="tahunlulus"></td>
+                </tr>
+                <tr>
+                    <td><label for="alamatlinkedin">Alamat LinkedIn :</label></td>
+                    <td><input type="text" name="alamatlinkedin"></td>
+                </tr>
+                <tr>
+                    <td><label for="pekerjaan">Pekerjaaan :</label></td>
+                    <td><input type="text" name="pekerjaan"></td>
+                </tr>
+                <tr>
+                    <td>Alamat Kantor</td>
+                    <td>
+                        <textarea name="alamatkantor" id="alamatkantor" cols="21" rows="3"></textarea>
+                </tr>
+                </tr>
+                <tr>
+                    <td><label for="pengurus">Pengurus Alumni</label></td>
+                    <td>
+                        <input type="radio" name="option" value="ya">Ya
+                        <input type="radio" name="option" value="tidak">Tidak
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="submit">Simpan</button>&nbsp;&nbsp;
+                        <button type="reset">Reset</button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>
