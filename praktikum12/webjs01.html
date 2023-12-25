@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Object JavaScript</title>
+    <script>
+        function jalankan() {
+            let arr_jus = ["Mango", "Apple", "Orange", "Banana", "Pineapple"];
+            console.log("Jumlah Jus: " + arr_jus.length);
+
+            let selectJus = document.getElementById("jus123");
+
+            for (var i = 0; i < arr_jus.length; i++) {
+                var opt = arr_jus[i];
+                var el = document.createElement("option");
+                el.textContent = opt;
+                el.value = opt;
+                selectJus.appendChild(el);
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            jalankan(); // Call jalankan() function when the page is loaded
+        });
+    </script>
+</head>
+
+<body>
+    <h2>Toko Jus Aneka Buah</h2>
+    <form>
+        <label for="jus123">Pilihan Jus:</label>
+        <select id="jus123"></select>
+    </form>
+</body>
+
+</html>
